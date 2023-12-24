@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link rel="stylesheet" href="healthy food.css">   
+<title>contact us page</title>
+</head>
+<body id="contact">
+<header>
+<span id ="logobox">
+<img class="img" onclick="home()" src="images/logo.png"height="50px">
+</span>
+<div>
+<button class="button" onclick="about()" type="submit">about</button>
+<button class="button" onclick="meals()" type="submit">meals</button>
+<button class="button" type="submit">contact us</button><br></div>
+</header>
+<div class="fform">
+<p class="paraghraph">If you have any questions or suggestions, please feel free to contact us. We're always happy to hear from you!
+</p>
+
+<form action="db-connect.php" method="post">
+<label class="paraghraph" for="txtbox1">name</label><br>
+<input class="label" id="txtbox1" type="text" name="name" placeholder="Name"/><br>
+<label class="paraghraph" for="txtbox2">Email</label><br>
+<input class="label"  id="txtbox2" type="email" name="email"  placeholder="Email"/><br>
+<label class="paraghraph"  for="txtbox3">message</label><br>
+<textarea class="mms" id="txtbox3" rows="10" cols="60"  name="message" placeholder="write your message here"></textarea><br>
+<button onclick="mymsg()" class="b2" type="submit" name="sub">submit</button>
+</form></div>
+<script src="healthyfood.js"></script>
+</body>
+</html>
